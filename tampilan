@@ -85,17 +85,17 @@ def key():
 
 def s():
        os.system('clear')
-       os.system('nano ../usr/etc/bash.bashrc')
+       os.system('nano /data/data/com.termux/files/usr/etc/bash.bashrc')
        awal()
  
 def welcome():
        os.system('clear')
-       os.system('nano ../usr/etc/motd')
+       os.system('nano /data/data/com.termux/files/usr/etc/motd')
        awal()
 
 def welcome():
        os.system('clear')
-       os.system('namo ../home/.bashrc')
+       os.system('nano /data/data/com.termux/files/home/.bashrc')
        awal()
 
 def bahan():
@@ -112,7 +112,7 @@ def zsh():
 
 def kali():
         os.system('clear')
-        os.system('cd ../')
+        os.system('cd /data/data/com.termux/files/home/')
         os.system('pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh')
         print 'ke mode kali linux? y/n'
         print
@@ -152,12 +152,12 @@ def menu():
          zshrc()
        else:
            if zsh == '1':
-               os.system('nano ../usr/etc/zshrc')
+               os.system('nano /data/data/com.termux/files/usr/etc/zshrc')
                os.system('termux-reload-settings')
                zshrc()
            else:
               if zsh == '2':
-                  os.system('nano ../home/.zshrc')
+                  os.system('nano /data/data/com.termux/files/home/.zshrc')
                   os.system('termux-reload-settings')
                   zshrc()
               else:
